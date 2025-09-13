@@ -49,6 +49,6 @@ Ensure you have **Python 3.13** installed on your system.
 ---
 
 ## Screenshots
-![main window](screenshots/1.png)
-![bill section](screenshots/2.png)
+<img src="screenshots/1.png" alt="Main Window" width="600"/>
+<img src="screenshots/2.png" alt="Menu Section" width="600"/>
 
