@@ -1,11 +1,3 @@
-# database.py
-"""
-DB layer for the Bill Management app.
-
-This module provides a thin manager around an SQLite DB and a small
-utility to display saved orders in a Tkinter window.
-"""
-
 import sqlite3
 from tkinter import Toplevel, Text, Scrollbar, RIGHT, Y, BOTH, END
 
@@ -36,7 +28,7 @@ class DBManager:
         self._cur.execute(self.CREATE_SQL)
         self._conn.commit()
 
-    # ---------------------
+   
     # Write helpers
     # ---------------------
     def add_order(self, item: str, quantity: int, price: float, total: float, date: str) -> None:
@@ -54,7 +46,6 @@ class DBManager:
         self._cur.execute(insert_sql, (item, quantity, price, total, date))
         self._conn.commit()
 
-    # ---------------------
     # Read helpers
     # ---------------------
     def fetch_order_dates(self):
@@ -69,7 +60,6 @@ class DBManager:
         )
         return self._cur.fetchall()
 
-    # ---------------------
     # UI utility
     # ---------------------
     def show_orders_window(self, title="All Orders", width=800, height=600):
@@ -116,7 +106,6 @@ class DBManager:
 
         text_area.config(state="disabled")
 
-    # ---------------------
     # Cleanup
     # ---------------------
     def close(self):
