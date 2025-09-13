@@ -49,10 +49,6 @@ Ensure you have **Python 3.13** installed on your system.
 ---
 
 ## Screenshots
-
-### Main Window
-![](screenshots/1.png)
-
-### Bill Section
-![](screenshots/2.png)
+![main window](screenshots/1.png)
+![bill section](screenshots/2.png)
 
