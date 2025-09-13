@@ -29,8 +29,7 @@ class DBManager:
         self._conn.commit()
 
    
-    # Write helpers
-    # ---------------------
+    # write helpers
     def add_order(self, item: str, quantity: int, price: float, total: float, date: str) -> None:
         """
         Insert one row representing an ordered item.
@@ -46,8 +45,7 @@ class DBManager:
         self._cur.execute(insert_sql, (item, quantity, price, total, date))
         self._conn.commit()
 
-    # Read helpers
-    # ---------------------
+    # read helpers
     def fetch_order_dates(self):
         """Return a list of distinct dates in descending order."""
         self._cur.execute("SELECT DISTINCT date FROM orders ORDER BY date DESC")
@@ -61,7 +59,6 @@ class DBManager:
         return self._cur.fetchall()
 
     # UI utility
-    # ---------------------
     def show_orders_window(self, title="All Orders", width=800, height=600):
         """
         Pop up a Toplevel window and print formatted orders grouped by date.
@@ -106,8 +103,7 @@ class DBManager:
 
         text_area.config(state="disabled")
 
-    # Cleanup
-    # ---------------------
+    # cleanup
     def close(self):
         """Close DB connection (call before exiting app)."""
         try:
@@ -115,6 +111,4 @@ class DBManager:
         finally:
             self._conn.close()
 
-
-# Backwards-compatible alias (so other modules importing Database keep working)
 Database = DBManager
