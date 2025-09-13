@@ -5,11 +5,12 @@
 ---
 
 ## **Features**
-- Add new bills with name, amount, and date.  
-- View all bills in a list.  
-- Delete a bill by its ID.  
-- Search/filter bills by date or status (Paid / Unpaid).  
-- Mark bills as Paid or Unpaid.  
+- **Menu Display** – View available items with their prices.
+- **Order Management** – Enter item quantities and generate bills.
+- **Total Calculation** – Automatically calculates the total bill.
+- **Database Integration** – Stores order history using SQLite.
+- **Order History** – Retrieve and display previous orders.
+- **Error Handling** – Prevents negative or invalid inputs.
 
 ---
 
