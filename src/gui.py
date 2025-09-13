@@ -1,8 +1,3 @@
-# gui.py
-"""
-Tkinter GUI for the Bill Management app.
-"""
-
 from tkinter import *
 from datetime import datetime
 from database import DBManager
