@@ -1,8 +1,3 @@
-# main.py
-"""
-Entry point for the Bill Management System.
-"""
-
 from gui import BillGUI
 
 
