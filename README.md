@@ -38,10 +38,10 @@ Ensure you have **Python 3.13** installed on your system.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/ahmed-elbehidy/bill_management_system
+   git clone https://github.com/ahmed-elbehidy/bill-management-system
 1. Navigate to the project folder:
    ```bash
-   cd bill_management_system
+   cd bill-management-system
 1. Run the application:
    ```bash
    python src/main.py
