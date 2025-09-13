@@ -48,6 +48,11 @@ Ensure you have **Python 3.13** installed on your system.
 
 ---
 
-## ScreenShots
-<img width="1300" height="729" alt="2" src="https://github.com/user-attachments/assets/d3dd1e87-125e-4fe2-b39e-f084ede2c652" />
-<img width="1300" height="725" alt="1" src="https://github.com/user-attachments/assets/7e5531cb-4fc7-4393-a022-c35b85dcc550" />
+## Screenshots
+
+### Main Window
+![Main Window](screenshots/1.png)
+
+### Bill Section
+![Bill Section](screenshots/2.png)
+
